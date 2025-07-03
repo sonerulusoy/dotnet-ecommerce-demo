@@ -1,4 +1,4 @@
-# dotnet_e-commerce
+# dotnet_e-commerce_demo
 
 .NET 9 + React + TypeScript ile geliştirilmiş tam yığın e-ticaret uygulaması.
 
