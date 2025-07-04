@@ -154,3 +154,4 @@ C:\Users\uluso\Desktop\dotnet_e-commerce\api\bin\Debug\net9.0\Microsoft.Identity
 C:\Users\uluso\Desktop\dotnet_e-commerce\api\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\uluso\Desktop\dotnet_e-commerce\api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\uluso\Desktop\dotnet_e-commerce\api\bin\Debug\net9.0\Scalar.AspNetCore.dll
+C:\Users\uluso\Desktop\dotnet_e-commerce\api\obj\Debug\net9.0\API.sourcelink.json

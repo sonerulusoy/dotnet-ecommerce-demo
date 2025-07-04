@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\uluso\\Desktop\\dotnet_e-commerce\\API\\API.csproj": {}
+    "C:\\Users\\uluso\\Desktop\\dotnet_e-commerce\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\uluso\\Desktop\\dotnet_e-commerce\\API\\API.csproj": {
+    "C:\\Users\\uluso\\Desktop\\dotnet_e-commerce\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\uluso\\Desktop\\dotnet_e-commerce\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\uluso\\Desktop\\dotnet_e-commerce\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\uluso\\Desktop\\dotnet_e-commerce\\API\\API.csproj",
+        "projectPath": "C:\\Users\\uluso\\Desktop\\dotnet_e-commerce\\api\\API.csproj",
         "packagesPath": "C:\\Users\\uluso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\uluso\\Desktop\\dotnet_e-commerce\\API\\obj\\",
+        "outputPath": "C:\\Users\\uluso\\Desktop\\dotnet_e-commerce\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
