@@ -1,8 +1,7 @@
 import { Button, ButtonGroup, Typography } from "@mui/material";
 import { useDispatch } from "react-redux";
-import { type AppDispatch } from "../../store/store";
+import { useAppSelector, type AppDispatch } from "../../store/store";
 import { decrement, increment, incrementByAmount } from "./counterSlice";
-import { useAppSelector } from "../../hooks/hooks";
 
 export default function Counter() {
     const count = useAppSelector((state) => state.counter.value);
