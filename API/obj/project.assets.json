@@ -3713,11 +3713,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\uluso\\Desktop\\dotnet_e-commerce\\api\\API.csproj",
+      "projectUniqueName": "C:\\Users\\uluso\\projects\\dotnet-ecommerce-demo\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\uluso\\Desktop\\dotnet_e-commerce\\api\\API.csproj",
+      "projectPath": "C:\\Users\\uluso\\projects\\dotnet-ecommerce-demo\\API\\API.csproj",
       "packagesPath": "C:\\Users\\uluso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\uluso\\Desktop\\dotnet_e-commerce\\api\\obj\\",
+      "outputPath": "C:\\Users\\uluso\\projects\\dotnet-ecommerce-demo\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3810,7 +3810,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
