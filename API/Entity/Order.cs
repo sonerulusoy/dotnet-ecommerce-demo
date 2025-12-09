@@ -15,9 +15,7 @@ namespace API.Entity
         public string? City { get; set; }
         public string? AddressLine { get; set; }
         public string? CustomerId { get; set; }
-
         public OrderStatus OrderStatus { get; set; } = OrderStatus.Pending;
-
         public List<OrderItem> OrderItems { get; set; } = new();
         public decimal SubTotal { get; set; }
         public decimal DeliveryFee { get; set; }

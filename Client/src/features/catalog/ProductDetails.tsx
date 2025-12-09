@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useParams } from "react-router"
 import { CircularProgress, Divider, Grid, Stack, Table, TableBody, TableCell, TableContainer, TableRow, Typography } from "@mui/material";
 import NotFound from "../../errors/NotFound";
-import { LoadingButton } from "@mui/lab";
+import { Button } from "@mui/material";
 import { AddShoppingCart } from "@mui/icons-material";
 import { currencyTRY } from "../../utils/formatCurrency";
 import { addItemToCart } from "../cart/cartSlice";
@@ -22,7 +22,7 @@ export default function ProductDetailsPage() {
   useEffect(() => {
     if (!product && id) dispatch(fetchProductById(parseInt(id)))
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
 
 
@@ -35,7 +35,7 @@ export default function ProductDetailsPage() {
   return (
     <Grid container spacing={6}>
       <Grid size={{ xl: 3, lg: 4, md: 5, sm: 6, xs: 12 }}>
-        <img src={`http://localhost:5032/images/${product.imageUrl}`} style={{ width: "100%" }} />
+        <img src={`https://localhost:5032/images/${product.imageUrl}`} style={{ width: "100%" }} />
       </Grid>
       <Grid size={{ xl: 9, lg: 8, md: 7 }}>
         <Typography variant="h3">{product.name}</Typography>
@@ -63,14 +63,14 @@ export default function ProductDetailsPage() {
         </TableContainer>
 
         <Stack direction="row" spacing={2} sx={{ mt: 3 }} alignItems="center">
-          <LoadingButton
+          <Button
             variant="outlined"
             loadingPosition="start"
             startIcon={<AddShoppingCart />}
             loading={status === "pendingAddItem" + product.id}
             onClick={() => dispatch(addItemToCart({ productId: product.id }))}>
             Sepete Ekle
-          </LoadingButton>
+          </Button>
 
           {/* Optional chain expressions can return undefined by design - using a non-null assertion is unsafe and wrong. */}
           {
