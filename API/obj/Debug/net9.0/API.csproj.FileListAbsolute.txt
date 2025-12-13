@@ -312,3 +312,5 @@ C:\Users\uluso\projects\dotnet-ecommerce-demo\API\obj\Debug\net9.0\refint\API.dl
 C:\Users\uluso\projects\dotnet-ecommerce-demo\API\obj\Debug\net9.0\API.pdb
 C:\Users\uluso\projects\dotnet-ecommerce-demo\API\obj\Debug\net9.0\API.genruntimeconfig.cache
 C:\Users\uluso\projects\dotnet-ecommerce-demo\API\obj\Debug\net9.0\ref\API.dll
+C:\Users\uluso\projects\dotnet-ecommerce-demo\API\bin\Debug\net9.0\Iyzipay.dll
+C:\Users\uluso\projects\dotnet-ecommerce-demo\API\bin\Debug\net9.0\Newtonsoft.Json.dll

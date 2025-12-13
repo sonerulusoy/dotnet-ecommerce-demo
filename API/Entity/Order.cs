@@ -42,11 +42,10 @@ namespace API.Entity
     public enum OrderStatus
     {
         Pending,
-        Processing,
-        Shipped,
-        Delivered,
-        Cancelled
+        Approved,
+        PaymentFailed,
+        Completed
     }
 
-    
+
 }

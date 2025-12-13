@@ -10,6 +10,7 @@ import requests from "../../api/requests";
 import { useAppDispatch } from "../../store/store";
 import { clearCart } from "../cart/cartSlice";
 import { LoadingButton } from "@mui/lab";
+import { useNavigate } from "react-router";
 
 
 const steps = ["Teslimat Bilgileri", "Ödeme Bilgileri", "Sipariş Özeti"];
@@ -33,6 +34,8 @@ export default function CheckoutPage() {
     const [orderId, setOrderId] = useState(0);
     const [loading, setLoading] = useState(false);
     const dispatch = useAppDispatch();
+
+    const navigate = useNavigate();
 
     async function handleNext(data: FieldValues) {
         if (activeStep === 2) {
@@ -90,10 +93,16 @@ export default function CheckoutPage() {
                                     <Typography variant="body1" sx={{ color: "text.secondary" }}>
                                         Sipariş numaranız <strong>#{orderId}</strong>. Siparişiniz onaylandığında size bir eposta göndereceğiz.
                                     </Typography>
-                                    <Button sx={{
-                                        alignSelf: "start",
-                                        width: { xs: "100%", sm: "auto" }
-                                    }} variant="contained">Siparişleri Listele</Button>
+                                    <Button
+                                        onClick={() => navigate("/orders")}
+                                        sx={{
+                                            alignSelf: "start",
+                                            width: { xs: "100%", sm: "auto" }
+                                        }}
+                                        variant="contained"
+                                    >
+                                        Siparişleri Listele
+                                    </Button>
                                 </Stack>
                             ) : (
                                 <form onSubmit={methods.handleSubmit(handleNext)}>
@@ -141,3 +150,4 @@ export default function CheckoutPage() {
         </FormProvider>
     );
 }
+
