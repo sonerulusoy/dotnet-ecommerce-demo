@@ -31,10 +31,10 @@ axios.interceptors.response.use(
 
           throw modelErrors;
         }
-        toast.error(data.title || "Bad Request");
+        toast.error(data.title);
         break;
       case 401:
-        toast.error(data.title || "Unauthorized");
+        toast.error(data.title);
         break;
       case 404:
         router.navigate("/not-found");
