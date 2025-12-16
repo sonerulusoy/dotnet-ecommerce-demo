@@ -23,7 +23,7 @@ Client/      # React + TypeScript + Vite (Frontend)
 ```sh
 cd API
 dotnet restore
-dotnet ef database update   # Eğer EF Core migration kullanıyorsanız
+dotnet ef database update   # Veritabanı migration'larını uygula
 dotnet run
 ```
 
@@ -44,6 +44,10 @@ Uygulama varsayılan olarak `http://localhost:3000` adresinde çalışır.
 - JWT ile kimlik doğrulama
 - Ürün listeleme ve detayları
 - Sepet yönetimi
+- Sipariş oluşturma ve yönetimi
+- Ödeme formu (kart bilgileri ile)
+- Sipariş geçmişi görüntüleme
+- Iyzipay ödeme entegrasyonu
 - Modern React (Vite, TypeScript, MUI)
 - Entity Framework Core ile SQLite veritabanı
 
