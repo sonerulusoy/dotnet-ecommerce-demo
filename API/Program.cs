@@ -20,7 +20,14 @@ builder.Services.AddDbContext<DataContext>(options =>
 
     options.UseNpgsql(connectionString);
 });
-builder.Services.AddCors();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+    b=> b.AllowAnyMethod()
+        .AllowAnyHeader()
+        .AllowCredentials()
+        .WithOrigins("https://dotnet-ecommerce-demo.web.app", "http://localhost:5173"));
+});
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<DataContext>();
 builder.Services.Configure<IdentityOptions>(options =>
 {
@@ -77,6 +84,8 @@ app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 
+app.UseRouting();
+
 app.UseCors(opt =>
 {
     opt.AllowAnyHeader()
@@ -87,6 +96,7 @@ app.UseCors(opt =>
 
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 
 SeedDatabase.Initiliaze(app);

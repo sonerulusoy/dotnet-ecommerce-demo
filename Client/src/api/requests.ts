@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import { router } from "../router/Routes";
 import { store } from "../store/store";
 
-axios.defaults.baseURL = "https://dotnet-ecommerce-demo-815860080202.europe-west3.run.apphttps://dotnet-ecommerce-demo-815860080202.europe-west3.run.app/api/";
+axios.defaults.baseURL = "https://dotnet-ecommerce-demo-815860080202.europe-west3.run.app/api/";
 axios.defaults.withCredentials = true;
 
 axios.interceptors.request.use(request => {
