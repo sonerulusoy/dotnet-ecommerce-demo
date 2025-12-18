@@ -107,7 +107,7 @@ export default function OrderList() {
                                 {selectedOrder?.orderItems.map((item) => (
                                     <TableRow key={item.id}>
                                         <TableCell>
-                                            <img src={`https://localhost:5032/images/${item.productImage}`} style={{ height: 60 }} />
+                                            <img src={`https://dotnet-ecommerce-demo-815860080202.europe-west3.run.app/images/${item.productImage}`} style={{ height: 60 }} />
                                         </TableCell>
                                         <TableCell align="right">{item.productName}</TableCell>
                                         <TableCell align="right">{currencyTRY.format(item.price)}</TableCell>

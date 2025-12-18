@@ -35,7 +35,7 @@ export default function ProductDetailsPage() {
   return (
     <Grid container spacing={6}>
       <Grid size={{ xl: 3, lg: 4, md: 5, sm: 6, xs: 12 }}>
-        <img src={`https://localhost:5032/images/${product.imageUrl}`} style={{ width: "100%" }} />
+        <img src={`https://dotnet-ecommerce-demo-815860080202.europe-west3.run.app/images/${product.imageUrl}`} style={{ width: "100%" }} />
       </Grid>
       <Grid size={{ xl: 9, lg: 8, md: 7 }}>
         <Typography variant="h3">{product.name}</Typography>

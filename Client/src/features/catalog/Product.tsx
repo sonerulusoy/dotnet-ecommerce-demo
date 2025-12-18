@@ -21,7 +21,7 @@ export default function Product({ product }: Props) {
 
   return (
     <Card>
-      <CardMedia sx={{ height: 160, backgroundSize: "contain" }} image={`https://localhost:5032/images/${product.imageUrl}`} />
+      <CardMedia sx={{ height: 160, backgroundSize: "contain" }} image={`https://dotnet-ecommerce-demo-815860080202.europe-west3.run.app/images/${product.imageUrl}`} />
       <CardContent>
         <Typography gutterBottom variant="h6" component="h2" color="text.secondary">
           {product.name}
